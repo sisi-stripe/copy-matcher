@@ -12,15 +12,16 @@ Compare intended copy against what's actually in a Figma frame — catches typos
 
 ## Setup
 
+> **On a Stripe Mac?** Clone this repo into your `~/stripe/` directory — Santa only allows esbuild to run from that path.
+> ```bash
+> cd ~/stripe
+> git clone https://github.com/sisi-stripe/copy-matcher.git
+> cd copy-matcher
+> ```
+
 ```bash
 npm install
 ```
-
-> **On a Stripe / corporate Mac?** Santa blocks esbuild's binary download. Run this instead:
-> ```bash
-> npm run setup
-> ```
-> It installs esbuild via Homebrew and wires it up automatically.
 
 Create a `.env` file in the project root:
 
