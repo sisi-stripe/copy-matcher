@@ -49,7 +49,9 @@ export async function fetchFigmaText(url: string, token: string): Promise<string
 
   if (!response.ok) {
     if (response.status === 403) {
-      throw new Error('Invalid Figma token or no access to this file.')
+      throw new Error(
+        'Figma returned 403. If you generated a new token, make sure it has the "File content" (read) scope enabled — Figma now requires explicit scopes when creating tokens.'
+      )
     }
     if (response.status === 404) {
       throw new Error('Figma file not found. Check the URL.')
