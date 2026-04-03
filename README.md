@@ -16,6 +16,12 @@ Compare intended copy against what's actually in a Figma frame — catches typos
 npm install
 ```
 
+> **On a Stripe / corporate Mac?** Santa blocks esbuild's binary download. Run this instead:
+> ```bash
+> npm run setup
+> ```
+> It installs esbuild via Homebrew and wires it up automatically.
+
 Create a `.env` file in the project root:
 
 ```
